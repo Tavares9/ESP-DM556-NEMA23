@@ -1,0 +1,21 @@
+menu "Stepper controller network"
+
+config STEPPER_WIFI_SSID
+    string "Wi-Fi SSID"
+    default ""
+    help
+        SSID of the Wi-Fi network used for firmware updates.
+
+config STEPPER_WIFI_PASSWORD
+    string "Wi-Fi password"
+    default ""
+    help
+        Password of the Wi-Fi network used by this device.
+
+config STEPPER_OTA_PASSWORD
+    string "OTA upload password"
+    default ""
+    help
+        Password required to upload firmware from the local network.
+
+endmenu
